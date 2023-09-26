@@ -1,0 +1,53 @@
+:root{
+    --primary-color: rgb(34, 56, 55);
+    --primary-color-2: rgb(64, 108, 106);
+    --secondary-color: rgb(181, 255, 251);
+    --text-color:white;
+}
+body{
+    background-color: var(--primary-color);
+}
+.invited{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+p{
+    opacity: .50;
+}
+.btn-back, .btn-invite-back{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-back:hover{
+    background-color: var(--primary-color-2);
+}
+.id-invite{
+    border: 2px solid var(--secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    text-align: center; /* Center the text horizontally */
+    display: inline-block;
+    justify-content: center; /* Center the text vertically */
+    align-items: center;    
+
+}
+.invited{
+    background-color: var(--primary-color-2);
+    padding: 10px;
+    border-radius: 10px ;
+}

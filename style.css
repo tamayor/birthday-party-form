@@ -1,0 +1,178 @@
+:root{
+    --primary-color: rgb(34, 56, 55);
+    --primary-color-2: rgb(64, 108, 106);
+    --secondary-color: rgb(181, 255, 251);
+    --text-color:white;
+}
+.form-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.form-div:hover, .label:hover {
+    color: var(--secondary-color);
+  }
+.form-submit{
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+h1{
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.birthdayPartySurveyForm{
+    font-family:  Arial, Helvetica, sans-serif;
+    justify-content: space-around;
+    transform: translateX(100%);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+input{
+    color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--primary-color-2);
+}
+input::placeholder{
+    color: var(--secondary-color);
+    opacity: 0.5;
+}
+input:active, input:focus, input:hover{
+    outline: 2px solid var(--secondary-color);
+    transition: outline 0.2s ease-in-out;
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease-in-out;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+select{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    background-color: var(--primary-color-2);
+}
+select:hover{
+    outline: 2px solid var(--secondary-color);
+    transition: outline 0.2s ease-in-out;
+    background-color: var(--primary-color);
+}
+select option{
+    background-color: var(--primary-color);
+    outline: 2px solid var(--secondary-color);
+}
+select option:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+button{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+#submit_form:hover,  #submit_form:focus{
+    outline: 1px rgb(181, 255, 251) solid;
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease-in-out;
+}   
+.submit-form{
+    opacity: .4;
+}
+.php-message{
+ text-align: center;
+}
+
+.organizer:hover, .guest:hover, .login:hover{
+    background-color: var(--primary-color-2);
+}
+.organizer-verification, .username, .password{
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.org{
+    padding: 10px;
+}
+
+.username:hover, .password:hover, .login{
+    color:var(--secondary-color);
+}
+.organizer-verification{
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+  #table{
+    display: none;
+  }
+.database-list{
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 10px;
+}
+th,td {
+    border: 1px solid var(--secondary-color);
+    padding: 10px;
+}
+.back-to-main-page:hover{
+    background-color: var(--primary-color-2);
+}
+#invited{
+    display: none;
+}
+.event-role-title{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+
+}
+.event-role{
+    display: flex;
+    justify-content: space-around;
+}
+.organizer, .guest{
+    margin: 10px;
+}
